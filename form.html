@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commission Form</title>
+    <link rel="Stylesheet" href="css.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="/javascript.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="flex">
+                <li><img src="Pictures/Overlays/Logo.png" style="width: 15%;" class="logo" alt="jellyyarts logo"></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="Works.html">Works</a></li>
+            </ul>            
+        </nav>
+    </header>
+    <main>
+        <img src="Pictures/Overlays/Banner.png" alt="jellyyarts banner" id="hero">
+        <form>
+            <h1>Commission/Practice form</h1>
+            <div id="form">
+            <!--Platform-->
+            <h3>Platform/Username</h3>
+            <div class="form">
+                <input type="radio" id="Discord" name="Platform" value="Discord">
+                <label for="Discord">Discord</label><br>
+                <input type="radio" id="Twitter" name="Platform" value="Twitter">
+                <label for="Twitter">Twitter</label><br>
+                <input type="radio" id="Instagram" name="Platform" value="Instagram">
+                <label for="Instagram">Instagram</label><br>
+                <input type="radio" id="Other" name="Platform" value="Other">
+                <label for="Other">Other (write with username)</label><br>    
+                <label for="Name">Username:</label><br>
+                <input type="text" id="Name" name="Name"><br>
+            </div>
+            <!--Who-->
+            <h3>Character(s)/Description of scene</h3>
+            <div class="form">
+                <label for="Character">Character(s):</label>
+                <input type="text" id="Character" name="Who">
+                <label for="What">Description:</label>
+                <input type="text" id="What" name="Who">
+            </div>
+            <!--Comm?-->
+            <h3>Commission or Practice?</h3>
+            <div class="form">
+                <input type="radio" id="Commission" name="Comm" value="Commission">
+                <label for="Commission">Commission</label><br>
+                <input type="radio" id="Practice" name="Comm" value="Practice">
+                <label for="Practice">Practice</label><br>
+            </div>
+            <!--Style?-->
+            <h3>Style (see <a href="Works.html#shading" target="_blank">shading</a> for comparisons)</h3>
+            <div class="form">
+                <input type="radio" id="Sketch" name="Style" value="Sketch">
+                <label for="Sketch">Simple sketch</label><br>
+                <input type="radio" id="Basic" name="Style" value="Basic">
+                <label for="Basic">Basic colors (No shading)</label><br>
+                <input type="radio" id="ShadeCel" name="Style" value="ShadeCel">
+                <label for="ShadeCel">Fully shaded (Cel/Blocky shading)</label><br>
+                <input type="radio" id="ShadeBlend" name="Style" value="ShadeBlend">
+                <label for="ShadeBlend">Fully shaded (Blended)</label><br>
+            </div>
+            <!--Lineart-->
+            <h3>Type of lineart (see <a href="Works.html#lineart" target="_blank"> lineart</a> for comparisons)</h3>
+            <div class="form">
+                <input type="radio" id="Black" name="Lineart" value="Black">
+                <label for="Black">Black lineart</label><br>
+                <input type="radio" id="1Color" name="Lineart" value="1Color">
+                <label for="1Color">One color for every section</label><br>
+                <input type="radio" id="ShadeLine" name="Lineart" value="ShadeLine">
+                <label for="ShadeLine">Shaded colors for each section</label><br>
+                <input type="radio" id="NoLine" name="Lineart" value="NoLine">
+                <label for="NoLine">No lineart</label><br>
+            </div>
+            <!--Bg-->
+            <h3>Background</h3>
+            <div class="form">
+                <input type="radio" id="OneColor" name="BG" value="OneColor">
+                <label for="OneColor">One color</label><br>
+                <input type="radio" id="Gradient" name="BG" value="Gradient">
+                <label for="Gradient">Gradient</label><br>
+                <input type="radio" id="Doodles" name="BG" value="Doodles">
+                <label for="Doodles">Doodles/symbols</label><br>
+                <input type="radio" id="Scenery" name="BG" value="Scenery">
+                <label for="Scenery">Scenery</label><br>
+                <label for="BG">Specifics for any:</label><br>
+                <input type="text" id="BG" name="BG"><br>
+            </div>
+            <!--Device-->
+            <h3>Device Preference (see <a href="Works.html#device" target="_blank">device</a> for comparisons)</h3>
+            <div class="form">
+                <input type="radio" id="Phone" name="Device" value="Phone">
+                <label for="Phone">Phone</label><br>
+                <input type="radio" id="Laptop" name="Device" value="Laptop">
+                <label for="Laptop">Laptop</label><br>
+                <input type="radio" id="Paper" name="Device" value="Paper">
+                <label for="Paper">Paper (sketches only)</label><br>
+                <input type="radio" id="NoPref" name="Device" value="NoPref">
+                <label for="NoPref">No preference</label><br>
+            </div>
+            <!--Ratio-->
+            <h3>Document size ratio</h3>
+            <div class="form">
+                <input type="radio" id="1:1" name="Ratio" value="1:1">
+                <label for="1:1">1:1</label><br>
+                <input type="radio" id="3:4" name="Ratio" value="3:4">
+                <label for="3:4">3:4</label><br>
+                <input type="radio" id="9:6" name="Ratio" value="9:6">
+                <label for="9:6">9:16</label><br>
+                <input type="radio" id="Any" name="Ratio" value="Any">
+                <label for="Any">Any</label><br>
+                <input type="radio" id="Custom" name="Ratio" value="Custom">
+                <label for="Custom">Custom or specific pixel requirements:</label><br>
+                <input type="text" id="CustomText" name="Ratio">
+            </div>
+            <!--Height of character(s)-->
+            <h3>Character(s) height</h3>
+            <div class="form">
+                <input type="radio" id="Shoulder" name="Height" value="Shoulder">
+                <label for="Shoulder">Shoulder and up</label><br>
+                <input type="radio" id="Waist" name="Height" value="Waist">
+                <label for="Waist">Waist and up</label><br>
+                <input type="radio" id="Full" name="Height" value="Full">
+                <label for="Full">Full body</label><br>
+            </div>
+            <!--Character(s)?-->
+            <h3>Character amount</h3>
+            <div class="form">
+                <input type="radio" id="1" name="Characters" value="1">
+                <label for="1">1</label><br>
+                <input type="radio" id="2" name="Characters" value="2">
+                <label for="2">2</label><br>
+                <input type="radio" id="3" name="Characters" value="3">
+                <label for="3">3</label><br>
+                <input type="radio" id="More" name="Characters" value="More">
+                <label for="More">More:</label><br>
+                <input type="text" id="MoreText" name="Characters">
+            </div>
+            <!--Payment-->
+            <h3>Payment option (if commission)</h3>
+            <div class="form">
+                <input type="radio" id="PP" name="Payment" value="PP">
+                <label for="PP">Paypal</label><br>
+                <input type="radio" id="Nitro" name="Payment" value="Nitro">
+                <label for="Nitro">Discord Nitro</label><br>
+                <input type="radio" id="Decoration" name="Payment" value="Decoration">
+                <label for="Decoration">Discord Decoration</label><br>
+                <input type="radio" id="Card" name="Payment" value="Card">
+                <label for="Card">Gift Card and type:</label><br>
+                <input type="text" id="CardText" name="Card">
+            </div>
+            <!--Reference-->
+            <h3>Reference of character(s) or pose/expression/action preferred (not required)</h3>
+            <div class="form">
+                <input type="file" id="Ref" name="Ref" multiple>
+                <label for="Ref"> Place references here</label><br>
+            </div>
+            <!--Notes?-->
+            <h3>Comments/Questions/Specifications/Concerns</h3>
+            <div class="form">
+                <input type="text" id="Notes" name="Notes"><br><br>
+            <input type="submit" value="Submit" id="Submit">
+            <input type="reset" value="Reset" id="Reset">
+            </div>
+            <!--Doesn't lead to anything yet-->
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>This website is for learning purposes only, all images used are of my own creation and are owned by me.</p>
+    </footer>
+</body>
+</html>
